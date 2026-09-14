@@ -1,4 +1,5 @@
-from src.tools.tools import scrape_url
+from src.pipelines.pipeline import run_research_pipeline
 
-results = scrape_url.invoke("https://en.wikipedia.org/wiki/Artificial_intelligence")
-print(results)
+
+topic = "The impact of AI on the job market in 2026"
+run_research_pipeline(topic)
